@@ -1,6 +1,6 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
-const markdown = require("./assets/utils/generateMarkdown");
+const markdown = require("./develop/utilities/generateMarkdown");
 const axios = require("axios");
 
 
@@ -82,8 +82,7 @@ function writeToFile(fileName, data) {
 
 function init() {
    inquirer.prompt(questions).then(data => {
-      axios
-         .get("https://api.github.com/users/" + data.username)
+      axios.get("https://api.github.com/users/" + data.username)
          .then(res => {
             const github= {
                email: res.data.email,
