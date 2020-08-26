@@ -1,99 +1,58 @@
-const fs = require("fs");
-const inquirer = require("inquirer");
-const markdown = require("./develop/utilities/generateMarkdown");
-const axios = require("axios");
+const inquirer = require('inquirer');
+const fs = require('fs');
+const generateMarkdown = require('./develop/utilities/generateMarkdown.js');
 
-
-
+// array of questions for user
 const questions = [
-   {
-      type: "input",
-      name: "username",
-      message: "What is your GitHub username? ",
-      default: "23gzepke",
-   },
-   {
-   
-      type: "input",
-      name: "repo",
-      message: "Provide the link to your repo: ",
-      default: "https://github.com/23gzepke/Readme-Generator",
-   },
-   {
-      type: "input",
-      name: "title",
-      message: "What is the title of your project/repo? ",
-      default: "README-Generator",
-   },
-   {
-      type: "input",
-      name: "description",
-      message: "Describe your project: ",
-      default: "Generate a good README.md file with a CLI application.",
-   },
-   {
-      type: "input",
-      name: "installation",
-      message: "Provide installation instructions: ",
-      default: "Run npm install",
-   },
-   {
-      type: "input",
-      name: "usage",
-      message: "Describe how to use your project: ",
-      default: "Run node index.js",
-   },
-   {
-      type: "input",
-      name: "license",
-      message: "Provide license/badge link info: ",
-      default: "![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)"
-   },
-   {
-      type: "input",
-      name: "contributors",
-      message: "Who are the contributors? ",
-      default: "Grant Zepke",
-   },
-   {
-      type: "input",
-      name: "tests",
-      message: "Describe the tests: ",
-      default: "Tests were performed, this README.md was created using this tool."
-   },
-   {
-      type: "input",
-      name: "development",
-      message: "Describe future development of this application/repo: ",
-      default: "Add function to generate unique badges based on user input."
-   },
-//    {
-//       type: "input",
-//       name: "badge",
-//       message: "Add a unique badge to your README (copy the link here): ",
-//      default: ""
-//   },
+{type: "input",
+name: "title",
+message:"What is the title of your project?"},
+{type: "input",
+name: "description",
+message:"Please enter a description of your project."},
+{type: "input",
+name: "installation",
+message:"Please describe the steps required to install your project."},
+{type: "input",
+name: "usage",
+message:"Please provide instruction and examples for use of your project."},
+{type: "input",
+name: "credits",
+message: "Starting with yourself, please enter the full name and github username for each member on your team separated by \"|\" (i.e. 'Firstname Lastname username | Firstname Lastname username') ",
+filter: answer => {return answer.split("|");}
+},
+{type: "list",
+name: "license",
+message:"Which license are you using for your project?",
+choices: [{name: "MIT", value: "MIT"}
+  , {name: "GNU GPLv3", value: "GNUGPLv3"},
+{name: "Mozilla Public License 2.0", value: "mozilla"}]},
+{type: "input",
+name: "tests",
+message:"Please provide examples of how to run your project tests."},
+{type: "input",
+name:"email",
+message: "Please enter your email address."},
+{type: "input",
+name: "repo",
+message: "Please enter the name of your github repository for this project."}
 ];
 
+// function to write README file
 function writeToFile(fileName, data) {
-   fs.writeFile(fileName, data, err => {
-      if (err) { throw err; };
-      console.log("README.md created successfully!");
-   });
-};
+  fs.writeFile("./" + fileName, data, 'utf8', (err) => {
+    if (err) throw new Error(err);
+  });
+}
 
+// function to initialize program
 function init() {
-   inquirer.prompt(questions).then(data => {
-      axios.get("https://api.github.com/users/" + data.username)
-         .then(response => {
-            const github = {
-               email: res.data.email,
-               name: res.data.name,
-               profile: res.data.html_url,
-            };
-            writeToFile("README", markdown(data, github));
-         });
-   });
-};
+  inquirer.prompt(questions).then(answers => {
+    console.log(answers);
+    //writeToFile("./generatedREADME/README.md", generateMarkdown(answers));
+  })
+  
+}
 
+// function call to initialize program
 init();
