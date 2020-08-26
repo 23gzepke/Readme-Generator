@@ -23,7 +23,7 @@ const questions = [
       type: "input",
       name: "title",
       message: "What is the title of your project/repo? ",
-      default: "README Generator",
+      default: "README-Generator",
    },
    {
       type: "input",
@@ -59,7 +59,7 @@ const questions = [
       type: "input",
       name: "tests",
       message: "Describe the tests: ",
-      default: "Tests were performed, this README was created using this tool."
+      default: "Tests were performed, this README.md was created using this tool."
    },
    {
       type: "input",
