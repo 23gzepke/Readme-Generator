@@ -45,7 +45,7 @@ const questions = [
       type: "input",
       name: "license",
       message: "Provide license/badge link info: ",
-      default: ""
+      default: "![license badge](<Readme-Generator>  Copyright (C) <2020>  <Grant Zepke>)"
    },
    {
       type: "input",
@@ -68,8 +68,8 @@ const questions = [
    {
       type: "input",
       name: "badge",
-      message: "Add a unique badge to your README (copy the link here): ",
-      default: ""
+      message: "Add a badge to your README (copy the link here): ",
+      default: "[![OpenFaaS](https://img.shields.io/badge/openfaas-cloud-blue.svg)](https://www.openfaas.com)"
    },
 ];
 
