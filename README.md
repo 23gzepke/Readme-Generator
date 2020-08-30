@@ -4,7 +4,7 @@
 
   ## Despription
 
-  Generate a professional README.md file with a CLI application
+  Generate a professional README.md file with a CLI application, utilizing node.js.
 
   ## Table of Contents
 
@@ -23,11 +23,11 @@
 
   ## Installation
 
-  Run npm install
+  Run npm install from the command line.
 
   ## Usage
 
-  Run node index.js
+  Run node index.js from the command line.
 
   ## License
 
