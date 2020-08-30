@@ -27,19 +27,19 @@ const questions = [
       type: "input",
       name: "description",
       message: "Describe your project: ",
-      default: "Generate a professional README.md file with a CLI application.",
+      default: "Generate a professional README.md file with a CLI application, utilizing node.js.",
    },
    {
       type: "input",
       name: "installation",
       message: "Provide installation instructions: ",
-      default: "Run npm install",
+      default: "Run npm install from the command line.",
    },
    {
       type: "input",
       name: "usage",
       message: "Describe how to use your project: ",
-      default: "Run node index.js",
+      default: "Run node index.js from the command line.",
    },
    {
       type: "input",

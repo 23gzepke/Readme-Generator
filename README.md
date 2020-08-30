@@ -4,7 +4,7 @@
 
   ## Despription
 
-  Generate a professional README.md file with a CLI application.
+  Generate a professional README.md file with a CLI application
 
   ## Table of Contents
 
