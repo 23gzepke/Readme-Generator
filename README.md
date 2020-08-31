@@ -38,9 +38,6 @@
   ## ![Screenshot](/utilities/images/screenshot-index1.png)
   ## ![Screenshot](/utilities/images/screenshot-markdown1.png)
   
-  ## Demo
-  
-  ## ![demo link](Untitled_ Aug 30, 2020 9_42 PM (3).webm)
 
   ## Contributors
 
