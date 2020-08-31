@@ -47,7 +47,7 @@
 
   ## Contact
 
-  - <null>
-  - null
+  - [Github Profile](<null>)
+  - [Github Profile](null)
   - [Github Profile](https://github.com/23gzepke)
 
