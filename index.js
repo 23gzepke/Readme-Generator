@@ -63,7 +63,7 @@ const questions = [
       type: "input",
       name: "development",
       message: "Describe future development of this application/repo: ",
-      default: "Add function to generate unique badges based on user input."
+      default: "In the future, add a function to generate unique badges based on user input."
    },
    {
       type: "input",

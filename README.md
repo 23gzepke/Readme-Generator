@@ -43,11 +43,11 @@
 
   ## Development
 
-  Add function to generate unique badges based on user input.
+  In the future, add a function to generate unique badges based on user input.
 
   ## Contact
 
-  - [Github Profile](<null>)
-  - [Github Profile](null)
+  - [grantzepke@gmail.com](<null>)
+  - [Grant Zepke](null)
   - [Github Profile](https://github.com/23gzepke)
 

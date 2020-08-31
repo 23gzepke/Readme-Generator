@@ -49,8 +49,8 @@ function generateMarkdown(data, github) {
 
   ## Contact
 
-  - [Github Profile](<${github.email}>)
-  - [Github Profile](${github.name})
+  - [grantzepke@gmail.com](<${github.email}>)
+  - [Grant Zepke](${github.name})
   - [Github Profile](${github.profile})
 
 `;
