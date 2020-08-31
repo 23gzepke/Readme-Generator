@@ -39,7 +39,7 @@
 
   ## Tests
 
-  These tests were performed, this README.md was created utilizing these tools.
+  These tests were performed using node.js, this README.md was created utilizing these tools.
 
   ## Development
 

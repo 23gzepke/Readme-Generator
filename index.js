@@ -27,7 +27,7 @@ const questions = [
       type: "input",
       name: "description",
       message: "Describe your project: ",
-      default: "Generate a professional README.md file with a CLI application, utilizing node.js.",
+      default: "The user of this program will be provided with a series of prompts using inquirer in order to generate a dynamically-created README.md file. These command-line prompts will obtain the necessary information for a professional README.md file and subsequently create this file for the user's project, program, or application.",
    },
    {
       type: "input",
