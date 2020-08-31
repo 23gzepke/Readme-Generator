@@ -57,7 +57,7 @@ const questions = [
       type: "input",
       name: "tests",
       message: "Describe the tests: ",
-      default: "These tests were performed, this README.md was created utilizing these tools."
+      default: "These tests were performed using node.js, this README.md was created utilizing these tools."
    },
    {
       type: "input",
