@@ -45,7 +45,7 @@ const questions = [
       type: "input",
       name: "license",
       message: "Provide license/badge link info: ",
-      default: "![license badge](<Readme-Generator>  Copyright (C) <2020>  <Grant Zepke>)"
+      default: "<img src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"/>"
    },
    {
       type: "input",
