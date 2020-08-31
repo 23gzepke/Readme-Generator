@@ -31,7 +31,7 @@
 
   ## License
 
-  [!img src](https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white)
+  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
   ## Contributors
 
@@ -50,13 +50,4 @@
   - [grantzepke@gmail.com](<null>)
   - [Grant Zepke](null)
   - [Github Profile](https://github.com/23gzepke)
-  
-  ## Index and Markdown
-  
-  ## ![Screenshot](/utilities/images/screenshot-index1.png)
-  ## ![Screenshot](/utilities/images/screenshot-markdown1.png)
-  
-  ## Demo
-  
-  ## ![demo link](Untitled_ Aug 30, 2020 9_42 PM (3).webm)
 
