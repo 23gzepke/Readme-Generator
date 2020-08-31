@@ -1,6 +1,6 @@
 # **README.md Generator**
 
-  
+  [![OpenFaaS](https://img.shields.io/badge/openfaas-cloud-blue.svg)](https://www.openfaas.com)
 
   ## Despription
 
@@ -31,7 +31,7 @@
 
   ## License
 
-  
+  ![license badge](<Readme-Generator>  Copyright (C) <2020>  <Grant Zepke>)
 
   ## Contributors
 
